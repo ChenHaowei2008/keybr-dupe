@@ -7,7 +7,8 @@ length = 5
 word = ''
 
 for i in range(length):
-    if(isVowel): word += random.choice(vowels)
-    else: word += random.choice(consts)
-    isVowel = not isVowel
+    if(random.randint(1,100) > 38):
+        word += random.choice(consts)
+    else: 
+        word += random.choice(vowels)
 print(word)
